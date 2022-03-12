@@ -183,42 +183,42 @@ Use the game function below to do the following:
 
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
-const compChoice = Math.floor(Math.random() * 3);;
+const compChoice = Math.floor(Math.random() * 3);
 
 function game(user, computer) {
   if (computer === 0) {
-    return ("paper");
+    computer = "paper";
   }
   if (computer === 1) {
-    return ('rock');
+    computer = 'rock';
   }
   if (computer === 2) {
-    return ('scissors');
+    computer = 'scissors';
   }
   if (user === 'paper' && computer === 'rock') {
-    return ('You win!');
+    return ('you win!');
   } else if (user === 'paper' && computer === 'scissors') {
-    return ('You lose!');
+    return ('you lose!');
   } else if (user === 'paper' && computer === 'paper') {
-    return ("It's a tie!");
+    return ("it's a tie!");
   }
   if (user === 'rock' && computer === 'scissors') {
-    return ('You win!');
+    return ('you win!');
   } else if (user === 'rock' && computer === 'paper') {
-    return ('You lose!');
+    return ('you lose!');
   } else if (user === 'rock' && computer === 'rock') {
-    return ("It's a tie!");
+    return ("it's a tie!");
   }
   if (user === 'scissors' && computer === 'paper') {
-    return ('You win!');
+    return ('you win!');
   } else if (user === 'scissors' && computer === 'rock') {
-    return ('You lose!');
+    return ('you lose!');
   } else if (user === 'scissors' && computer === 'scissors') {
-    return ("It's a tie!");
+    return ("it's a tie!");
   }
 }
 
-console.log(game('rock', compChoice));
+console.log(game('paper', compChoice))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -232,7 +232,7 @@ Using the miles function below do the following:
 */
 
 function miles(kilometers) {
-  return kilometers * 0.62137;
+  return kilometers * 0.621371;
 }
 
 console.log(miles(1))
@@ -248,9 +248,9 @@ Using the feet function below do the following:
 */
 
 function feet(cm) {
-  return cm * 0.0328084
+  return cm * 0.0328084;
 }
-console.log(feet(2))
+console.log(feet(1))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -305,6 +305,8 @@ function grade(number) {
     return ('You got an F')
   }
 }
+
+console.log(grade(80))
 
 
 
